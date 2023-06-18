@@ -1,0 +1,295 @@
+@font-face {
+  font-family: spaceGroteskBold;
+  src: url(../assets/fonts/static/SpaceGrotesk-Bold.ttf);
+}
+
+@font-face {
+  font-family: spaceGroteskMedium;
+  src: url(../assets/fonts/static/SpaceGrotesk-Medium.ttf);
+}
+
+/* learn.css */
+
+.gesture-info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* .gesture-info h3 {
+} */
+
+@media (max-width: 768px) {
+  .gesture-info {
+    text-align: center;
+  }
+}
+
+.total-container {
+  background-color: #6666ff;
+}
+
+.tutorial-container {
+  position: relative;
+  margin-top: -40px;
+  margin-bottom: -50px;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.6
+  ); /* Adjust the opacity and color as desired */
+  backdrop-filter: blur(10px); /* Adjust the blur amount as desired */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.banner {
+  background-color: white;
+  height: 60vh;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 100%;
+}
+
+.banner p {
+  margin-bottom: 10px;
+}
+
+.banner button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  background-color: #6666ff; /* Adjust the button's background color as desired */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.learning-container {
+  display: flex;
+  margin-top: 100px;
+}
+
+.description-container {
+  width: 50%;
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5%;
+}
+
+.webcam-container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 5%;
+}
+
+.tutorial-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #6666ff;
+  height: 90vh;
+  padding: 2rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  margin-bottom: -5%;
+}
+
+.rulesContainer {
+  /* position: relative; */
+  border: 30px solid orange;
+  top: 50%;
+  left: 50%;
+  background-color: white;
+  width: 90vw;
+  box-shadow: 1px 12px 1px 1px rgba(0, 0, 0, 0.7);
+  border-radius: 2rem;
+  border: 3px solid rgba(0, 0, 0, 0.8);
+  padding-bottom: 2rem;
+}
+
+.rulesContainer h1 {
+  font-size: 32px;
+  text-align: center;
+  font-family: spaceGroteskBold;
+  height: 5%;
+}
+
+.rulesContainer h2 {
+  color: purple;
+  font-family: spaceGroteskBold;
+  margin-left: 8%;
+  font-size: 24px;
+}
+
+.rulesContainer ol {
+  counter-reset: item;
+  list-style-type: none;
+  padding-left: 13%;
+  width: 84%;
+}
+
+.rulesContainer li {
+  display: block;
+  text-indent: -27px;
+  font-family: spaceGroteskMedium;
+  margin-bottom: 5px;
+  font-size: 17px;
+}
+
+.firstParagraph {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.secondParagraph {
+  margin-top: 10%;
+}
+
+.rulesContainer p {
+  font-family: spaceGroteskMedium;
+  width: 84%;
+  margin-left: 0%;
+  font-size: 17px;
+}
+
+.rulesContainer li:before {
+  content: counter(item) "    ";
+  counter-increment: item;
+}
+
+@media (max-width: 600px) {
+  .rulesContainer {
+    width: 93%;
+  }
+
+  .rulesContainer h1 {
+    font-size: 48px;
+    height: auto;
+  }
+
+  .rulesContainer h2 {
+    font-size: 24px;
+  }
+
+  .rulesContainer li {
+    font-size: 17px;
+  }
+
+  .rulesContainer p {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 601px) {
+  .rulesContainer {
+    width: 90%;
+  }
+
+  .rulesContainer h1 {
+    font-size: 48px;
+  }
+
+  .rulesContainer h2 {
+    font-size: 24px;
+  }
+
+  .rulesContainer li {
+    font-size: 19px;
+  }
+
+  .rulesContainer p {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 768px) {
+  .rulesContainer {
+    width: 90%;
+  }
+
+  .rulesContainer h1 {
+    font-size: 48px;
+  }
+
+  .rulesContainer h2 {
+    font-size: 24px;
+  }
+
+  .rulesContainer li {
+    font-size: 17px;
+  }
+
+  .rulesContainer p {
+    font-size: 19px;
+  }
+}
+
+@media (min-width: 992px) {
+  .rulesContainer {
+    width: 90%;
+    height: 90%;
+  }
+
+  .rulesContainer h1 {
+    font-size: 56px;
+  }
+
+  .rulesContainer h2 {
+    font-size: 24px;
+  }
+
+  .rulesContainer li {
+    font-size: 20px;
+  }
+
+  .rulesContainer p {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-height: 850px) {
+  .rulesContainer p,
+  .rulesContainer li {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-height: 750px) {
+  .rulesContainer p,
+  .rulesContainer li {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-height: 670px) {
+  .rulesContainer p,
+  .rulesContainer li {
+    font-size: 14.5px;
+  }
+}
